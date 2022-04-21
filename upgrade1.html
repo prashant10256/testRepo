@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   
+        <center>
+            <img id="myImage" src="img35.jpg" style="height: 300px;width: 300px;">  
+        </center>
+
+        <script>
+            var imageArray = ["img32.jpg","img33.jpg","img34.jpg","img35.jpg"]
+            var refToMyImage = document.getElementById("myImage");
+            var counter = 0;
+
+            window.setInterval(()=>{
+                refToMyImage.src = imageArray[counter];
+                counter = counter + 1;
+                if(counter ==  imageArray.length)
+                {
+                    counter = 0;
+                }
+            }, 5000);
+
+        </script>
+</body>
+</html>

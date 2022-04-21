@@ -1,0 +1,14 @@
+/* css reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/* css veriable */
+:root{
+    --navbar-height:55px;
+}
+/*navigation bar*/
+#navbar{
+display: flex;
+align-items: center;
+}
